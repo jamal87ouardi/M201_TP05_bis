@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#F9D4E1">
+
+    <EditText
+        android:id="@+id/nuite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Nuité"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        />
+
+    <EditText
+        android:id="@+id/personne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Nombre de personnes"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type de chambre"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        >
+
+        <RadioButton
+            android:id="@+id/simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simple"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/doubl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Double" />
+
+        <RadioButton
+            android:id="@+id/multiple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiple" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/petitdej"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avec petit déjeuner"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="80dp"
+        >
+
+        <Button
+            android:id="@+id/calcul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Calculer" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Clear"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+</LinearLayout>
